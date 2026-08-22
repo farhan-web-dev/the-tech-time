@@ -139,7 +139,10 @@ export const courses: Course[] = [
       "Scale with additional products and marketplaces",
     ],
     curriculum: [
-      { module: "Amazon & FBA Foundations", topics: "Marketplaces, business models, fee structure" },
+      {
+        module: "Amazon & FBA Foundations",
+        topics: "Marketplaces, business models, fee structure",
+      },
       { module: "Seller Central Setup", topics: "Account creation, verification, dashboard tour" },
       { module: "Product Research", topics: "Criteria, tools, demand and competition analysis" },
       { module: "Sourcing & Suppliers", topics: "Alibaba, samples, negotiation, quality checks" },
