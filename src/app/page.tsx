@@ -103,8 +103,8 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm transition-all">
         <div className="mx-auto max-w-7xl px-6 py-3.5 flex items-center justify-between">
           {/* Logo & Brand */}
-          <Link href="/" className="flex items-center gap-3.5 group">
-            <div className="relative w-11 h-11 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-4 group">
+            <div className="relative w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
               <img
                 src="/images/logo.png"
                 alt="The Time Tech Logo"
@@ -112,31 +112,31 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-extrabold text-xl tracking-tight text-[#2C1A0B]">
+              <span className="font-black text-2xl md:text-3xl uppercase tracking-wider text-[#2C1A0B]">
                 {brand.name}
               </span>
-              <span className="text-[0.65rem] uppercase tracking-[0.25em] text-[#C59B27] font-bold mt-0.5">
-                Academy
+              <span className="text-[0.7rem] uppercase tracking-[0.3em] text-[#C59B27] font-extrabold mt-1">
+                ACADEMY & AI STORE BUILDER
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 font-semibold text-sm text-[#5C4532]">
-            <Link href="/" className="text-[#C59B27] font-bold">
-              Home
+          <nav className="hidden md:flex items-center gap-8 font-bold text-sm uppercase tracking-wider text-[#5C4532]">
+            <Link href="/" className="text-[#C59B27]">
+              HOME
             </Link>
             <Link href="/courses" className="hover:text-[#C59B27] transition-colors">
-              Courses
+              COURSES
             </Link>
             <a href="#about" className="hover:text-[#C59B27] transition-colors">
-              About Us
+              ABOUT US
             </a>
             <a href="#features" className="hover:text-[#C59B27] transition-colors">
-              Features
+              FEATURES & AI
             </a>
             <a href="#reviews" className="hover:text-[#C59B27] transition-colors">
-              Reviews
+              REVIEWS
             </a>
           </nav>
 
@@ -144,15 +144,15 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="#enrol"
-              className="text-sm font-bold text-[#5C4532] hover:text-[#C59B27] px-4 py-2 transition-colors"
+              className="text-xs font-extrabold uppercase tracking-widest text-[#5C4532] hover:text-[#C59B27] px-4 py-2 transition-colors"
             >
-              Sign In
+              SIGN IN
             </a>
             <a
               href="#enrol"
-              className="bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B8860B] hover:opacity-95 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-md shadow-amber-900/20 transition-all hover:shadow-lg hover:-translate-y-0.5"
+              className="bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B8860B] hover:opacity-95 text-white text-xs font-extrabold uppercase tracking-widest px-6 py-3 rounded-full shadow-md shadow-amber-900/20 transition-all hover:shadow-lg hover:-translate-y-0.5"
             >
-              Enrol Now
+              ENROL NOW
             </a>
           </div>
 
@@ -172,52 +172,52 @@ export default function Home() {
             <Link
               href="/"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-[#C59B27] font-bold"
+              className="block py-2 text-[#C59B27] font-extrabold uppercase tracking-wider"
             >
-              Home
+              HOME
             </Link>
             <Link
               href="/courses"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-[#5C4532] font-semibold hover:text-[#C59B27]"
+              className="block py-2 text-[#5C4532] font-bold uppercase tracking-wider hover:text-[#C59B27]"
             >
-              Courses
+              COURSES
             </Link>
             <a
               href="#about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-[#5C4532] font-semibold hover:text-[#C59B27]"
+              className="block py-2 text-[#5C4532] font-bold uppercase tracking-wider hover:text-[#C59B27]"
             >
-              About Us
+              ABOUT US
             </a>
             <a
               href="#features"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-[#5C4532] font-semibold hover:text-[#C59B27]"
+              className="block py-2 text-[#5C4532] font-bold uppercase tracking-wider hover:text-[#C59B27]"
             >
-              Features
+              FEATURES & AI
             </a>
             <a
               href="#reviews"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-[#5C4532] font-semibold hover:text-[#C59B27]"
+              className="block py-2 text-[#5C4532] font-bold uppercase tracking-wider hover:text-[#C59B27]"
             >
-              Reviews
+              REVIEWS
             </a>
             <div className="pt-2 flex flex-col gap-2">
               <a
                 href="#enrol"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full text-center bg-gradient-to-r from-[#D4AF37] to-[#C59B27] text-white py-2.5 rounded-full font-bold shadow"
+                className="w-full text-center bg-gradient-to-r from-[#D4AF37] to-[#C59B27] text-white py-2.5 rounded-full font-extrabold uppercase tracking-widest text-xs shadow"
               >
-                Enrol Now
+                ENROL NOW
               </a>
             </div>
           </div>
         )}
       </header>
 
-      {/* Hero Section (Matching TOTC reference layout in Logo Gold & Espresso Brown theme) */}
+      {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-[#2C1A0B] via-[#3A230F] to-[#4A2E00] rounded-b-[40px] md:rounded-b-[70px] lg:rounded-b-[100px] pt-12 pb-24 md:pb-32 text-white overflow-hidden">
         {/* Background Gold Ambient Glows */}
         <div className="absolute top-10 left-10 w-96 h-96 rounded-full bg-[#D4AF37]/15 blur-3xl pointer-events-none" />
@@ -227,22 +227,23 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Hero Left Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C59B27]/20 border border-[#D4AF37]/40 text-xs font-bold uppercase tracking-wider text-[#F3E5AB]">
+              {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C59B27]/20 border border-[#D4AF37]/40 text-xs font-extrabold uppercase tracking-widest text-[#F3E5AB]">
                 <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Live Instructor-Led Academy</span>
-              </div>
+                <span>BUILD STORE WITH AI & LIVE ACADEMY</span>
+              </div> */}
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
-                Studying{" "}
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-wide leading-[1.15]">
+                BUILD YOUR STORE WITH{" "}
                 <span className="text-[#D4AF37] relative underline decoration-wavy decoration-[#D4AF37]/60">
-                  Online
+                  AI
                 </span>{" "}
-                is now much easier with <span className="text-white">The Time Tech</span>
+                & MASTER E-COMMERCE WITH <span className="text-white">THE TIME TECH</span>
               </h1>
 
-              <p className="text-base md:text-lg text-amber-100/90 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                {brand.tagline} Live interactive courses in Shopify E-Commerce, Amazon FBA, and
-                Digital Marketing with 70% hands-on practical training.
+              <p className="text-base md:text-md text-amber-100/90 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                {brand.tagline.toUpperCase()} Learn how to build stores with AI, generate winning
+                product descriptions, launch Meta & Google ads, and master Amazon FBA with 70%
+                hands-on training.
               </p>
 
               {/* Action Buttons */}
@@ -283,7 +284,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero Right Visual (With Image Slot & Floating UI Badges) */}
+            {/* Hero Right Visual & Floating UI Badges */}
             <div className="lg:col-span-5 relative">
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 {/* Outer Decorative Circle Background */}
@@ -297,11 +298,6 @@ export default function Home() {
                       alt="The Time Tech Instructor & Classroom"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-
-                    {/* Helper Image Slot Label */}
-                    <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md text-amber-200 text-[0.65rem] px-3 py-1 rounded-full border border-[#D4AF37]/30 font-medium">
-                      📷 Image Slot: Instructor / Hero Image
-                    </div>
                   </div>
                 </div>
 
@@ -343,15 +339,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "Our Success" Section (Stats matching Reference Image) */}
+      {/* "OUR SUCCESS" Section */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B] tracking-tight">
-            Our Success
+          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B]">
+            OUR SUCCESS & IMPACT
           </h2>
           <p className="mt-3 text-sm md:text-base text-[#6E5540] max-w-2xl mx-auto">
-            We are dedicated to empowering entrepreneurs and professionals across the UAE and
-            globally with hands-on skills.
+            WE ARE DEDICATED TO EMPOWERING ENTREPRENEURS ACROSS THE UAE & GLOBALLY WITH AI STORE
+            BUILDING & PRACTICAL SKILLS.
           </p>
 
           <div className="mt-14 grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-8">
@@ -359,63 +355,73 @@ export default function Home() {
               <span className="text-4xl lg:text-5xl font-black text-[#C59B27] tracking-tight">
                 15K+
               </span>
-              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F]">Enrolled Students</p>
+              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
+                Enrolled Students
+              </p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#FAF6EE] border border-[#B8860B]/20 transition-transform hover:-translate-y-1">
               <span className="text-4xl lg:text-5xl font-black text-[#B8860B] tracking-tight">
                 75%
               </span>
-              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F]">Success Rate</p>
+              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
+                Success Rate
+              </p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#FAF6EE] border border-[#D4AF37]/20 transition-transform hover:-translate-y-1">
               <span className="text-4xl lg:text-5xl font-black text-[#D4AF37] tracking-tight">
                 35+
               </span>
-              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F]">Live Modules</p>
+              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
+                Live AI Modules
+              </p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#FAF6EE] border border-[#4A2E00]/20 transition-transform hover:-translate-y-1">
               <span className="text-4xl lg:text-5xl font-black text-[#4A2E00] tracking-tight">
                 26
               </span>
-              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F]">Chief Experts</p>
+              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
+                Chief Experts
+              </p>
             </div>
 
             <div className="p-6 rounded-3xl bg-[#FAF6EE] border border-[#8B6B23]/20 transition-transform hover:-translate-y-1 col-span-2 md:col-span-1">
               <span className="text-4xl lg:text-5xl font-black text-[#8B6B23] tracking-tight">
                 16
               </span>
-              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F]">Years Experience</p>
+              <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
+                Years Experience
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* "All-In-One Cloud Platform" / Pillars Section */}
+      {/* "ALL-IN-ONE AI LEARNING EXPERIENCE" Section */}
       <section className="py-16 bg-[#FAF8F5]" id="about">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B]">
-            All-In-One <span className="text-[#C59B27]">Learning Experience</span>
+          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B]">
+            ALL-IN-ONE <span className="text-[#C59B27]">AI & E-COMMERCE LEARNING EXPERIENCE</span>
           </h2>
-          <p className="mt-3 text-sm md:text-base text-[#6E5540] max-w-2xl mx-auto">
-            The Time Tech provides everything you need to learn e-commerce, build your online store,
-            and scale profitable campaigns.
+          <p className="mt-3 text-sm md:text-base text-[#6E5540] max-w-2xl mx-auto uppercase tracking-wide font-medium">
+            THE TIME TECH PROVIDES EVERYTHING YOU NEED TO BUILD ONLINE STORES WITH AI AND SCALE
+            PROFITABLE CAMPAIGNS.
           </p>
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Pillar Card 1 */}
             <div className="bg-white p-8 rounded-3xl shadow-xl shadow-amber-900/5 border border-amber-900/10 hover:border-[#C59B27]/40 transition-all hover:-translate-y-1.5 text-center relative group">
               <div className="w-16 h-16 rounded-2xl bg-[#3A230F] text-[#D4AF37] flex items-center justify-center mx-auto shadow-lg shadow-amber-950/20 group-hover:scale-110 transition-transform">
-                <Video className="w-8 h-8" />
+                <Sparkles className="w-8 h-8" />
               </div>
-              <h3 className="mt-6 text-xl font-extrabold text-[#2C1A0B]">
-                Live Practical Training
+              <h3 className="mt-6 text-xl font-extrabold uppercase tracking-wider text-[#2C1A0B]">
+                BUILD STORE WITH AI
               </h3>
               <p className="mt-3 text-xs md:text-sm text-[#6E5540] leading-relaxed">
-                70% hands-on practical work with live instructor feedback. Learn by building real
-                store pages and real advertising campaigns.
+                Generate high-converting Shopify store structures, themes, product descriptions, and
+                media assets automatically using AI tools.
               </p>
             </div>
 
@@ -424,8 +430,8 @@ export default function Home() {
               <div className="w-16 h-16 rounded-2xl bg-[#C59B27] text-white flex items-center justify-center mx-auto shadow-lg shadow-amber-900/20 group-hover:scale-110 transition-transform">
                 <ShoppingBag className="w-8 h-8" />
               </div>
-              <h3 className="mt-6 text-xl font-extrabold text-[#2C1A0B]">
-                Store & Sourcing Mastery
+              <h3 className="mt-6 text-xl font-extrabold uppercase tracking-wider text-[#2C1A0B]">
+                STORE & SOURCING MASTERY
               </h3>
               <p className="mt-3 text-xs md:text-sm text-[#6E5540] leading-relaxed">
                 Comprehensive step-by-step training in Shopify store creation, product validation,
@@ -438,10 +444,12 @@ export default function Home() {
               <div className="w-16 h-16 rounded-2xl bg-[#8B6B23] text-white flex items-center justify-center mx-auto shadow-lg shadow-amber-900/20 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-8 h-8" />
               </div>
-              <h3 className="mt-6 text-xl font-extrabold text-[#2C1A0B]">Growth & Digital Ads</h3>
+              <h3 className="mt-6 text-xl font-extrabold uppercase tracking-wider text-[#2C1A0B]">
+                AI ADS & DIGITAL GROWTH
+              </h3>
               <p className="mt-3 text-xs md:text-sm text-[#6E5540] leading-relaxed">
-                Master Meta Ads, Google Performance Max, SEO, and email marketing. Read analytics
-                dashboards and optimize campaigns for high ROAS.
+                Master AI-powered ad copy, Meta Ads, Google Performance Max, SEO, and email
+                automations. Read analytics dashboards with confidence.
               </p>
             </div>
           </div>
@@ -493,7 +501,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 2: Course & Academy Preview (With Image Slot) */}
+            {/* Card 2: Course & Academy Preview */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-amber-900/10 bg-white flex flex-col justify-between">
               <div className="relative aspect-video w-full overflow-hidden bg-stone-100 group">
                 <img
@@ -501,10 +509,6 @@ export default function Home() {
                   alt="Classroom Session"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                {/* Image slot tag */}
-                <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-amber-200 text-[0.65rem] px-3 py-1 rounded-full border border-[#D4AF37]/30 font-medium">
-                  📷 Image Slot: Classroom Preview
-                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
               <div className="p-8 space-y-3">
@@ -601,7 +605,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Image Frame (With Image Slot) */}
+            {/* Right Image Frame */}
             <div className="lg:col-span-6 relative">
               <div className="relative mx-auto max-w-lg lg:max-w-none">
                 <div className="relative bg-white rounded-3xl p-4 shadow-2xl border border-amber-900/10 overflow-hidden">
@@ -611,10 +615,6 @@ export default function Home() {
                       alt="Physical Classroom Experience Online"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    {/* Image slot label */}
-                    <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-md text-amber-200 text-[0.65rem] px-3 py-1 rounded-full border border-[#D4AF37]/30">
-                      📷 Image Slot: Classroom Feature
-                    </div>
                   </div>
                 </div>
               </div>
@@ -623,20 +623,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "OUR FEATURES" Section (Multi-row UI Showcase matching Reference Image) */}
+      {/* "OUR FEATURES & AI TOOLS" Section */}
       <section className="py-20 bg-white" id="features">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-xs font-bold text-[#C59B27] uppercase tracking-widest">
-              OUR FEATURES
+            <span className="text-xs font-extrabold text-[#C59B27] uppercase tracking-widest">
+              OUR FEATURES & AI TOOLS
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B] mt-2">
-              This is how we make <span className="text-[#C59B27]">learning easier</span>
+            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B] mt-2">
+              THIS IS HOW WE MAKE{" "}
+              <span className="text-[#C59B27]">E-COMMERCE & LEARNING EASIER WITH AI</span>
             </h2>
             <p className="mt-3 text-sm md:text-base text-[#6E5540]">
-              Designed specifically for busy professionals, entrepreneurs, and students looking for
-              high-impact practical results.
+              Designed specifically for entrepreneurs, sellers, and professionals looking to
+              leverage AI to build online stores and scale faster.
             </p>
+          </div>
+
+          {/* AI Feature Spotlight Banner: BUILD STORE WITH AI */}
+          <div className="mb-20 bg-gradient-to-r from-[#2C1A0B] via-[#3A230F] to-[#1F1208] rounded-3xl p-8 md:p-12 text-white border border-[#D4AF37]/30 shadow-2xl relative overflow-hidden">
+            <div className="absolute -right-10 -bottom-10 w-80 h-80 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              <div className="lg:col-span-8 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C59B27]/20 border border-[#D4AF37]/40 text-xs font-bold text-[#F3E5AB] uppercase tracking-widest">
+                  <Sparkles className="w-4 h-4 text-[#D4AF37]" />
+                  <span>SPECIALIZED MODULE: BUILD STORE WITH AI</span>
+                </div>
+                <h3 className="text-2xl md:text-4xl font-black uppercase tracking-wide text-white">
+                  LAUNCH YOUR ONLINE STORE IN MINUTES WITH AI
+                </h3>
+                <p className="text-sm md:text-base text-amber-100/90 leading-relaxed max-w-2xl">
+                  Stop spending weeks building website layouts manually. Learn how to prompt AI
+                  store builders, create high-converting copywriting with AI, produce
+                  ultra-realistic product imagery, and deploy 24/7 AI chat assistants.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-bold text-amber-200">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                    <span>AI Store Generation & Prompting</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                    <span>AI Product Copy & SEO Generator</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                    <span>24/7 AI Customer Support Chatbots</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                    <span>AI Ad Copy & Visual Creation</span>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-4 flex justify-center">
+                <a
+                  href="/courses?slug=shopify"
+                  className="w-full sm:w-auto text-center px-8 py-4 bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B8860B] hover:opacity-95 text-white font-extrabold text-xs uppercase tracking-widest rounded-full shadow-xl transition-all hover:scale-105"
+                >
+                  EXPLORE AI STORE MODULE
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Feature Row 1: Interactive Live Video Call UI */}
@@ -654,11 +702,9 @@ export default function Home() {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#2C1A0B] animate-ping" />
                     <span>LIVE SESSION</span>
                   </div>
-                  {/* Floating instructor label */}
                   <div className="absolute bottom-16 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-lg text-xs font-semibold text-amber-100">
                     Instructor — Lead E-Commerce Specialist
                   </div>
-                  {/* Call control bar */}
                   <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full flex items-center gap-4 text-white">
                     <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                       <Mic className="w-4 h-4" />
@@ -678,13 +724,13 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-[#C59B27]/20 text-[#C59B27] flex items-center justify-center font-bold">
                 <Video className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#2C1A0B]">
-                Interactive Live Call & Video Sessions
+              <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wide text-[#2C1A0B]">
+                INTERACTIVE LIVE CALL & VIDEO SESSIONS
               </h3>
               <p className="text-sm md:text-base text-[#6E5540] leading-relaxed">
                 Connect directly with instructors during scheduled live sessions. Ask questions in
-                real time, request screen share assistance, and learn in an engaging virtual
-                classroom.
+                real time, request live screen-sharing store audits, and learn in an engaging
+                virtual classroom.
               </p>
               <ul className="space-y-2 text-xs md:text-sm text-[#3A230F] font-semibold pt-1">
                 <li className="flex items-center gap-2">
@@ -709,17 +755,17 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-[#3A230F] text-[#D4AF37] flex items-center justify-center font-bold">
                 <ShoppingBag className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#2C1A0B]">
-                Tools For Store Owners & Sellers
+              <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wide text-[#2C1A0B]">
+                PRACTICAL AI TOOLS FOR STORE OWNERS & SELLERS
               </h3>
               <p className="text-sm md:text-base text-[#6E5540] leading-relaxed">
-                Build real business assets during the course. From Shopify store structure and
-                payment gateway setup to Amazon FBA shipping plans and Meta Pixel integration.
+                Build real business assets during the course. From Shopify store building with AI
+                and payment gateway setup to Amazon FBA shipping plans and Meta Pixel integration.
               </p>
               <ul className="space-y-2 text-xs md:text-sm text-[#3A230F] font-semibold pt-1">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C59B27]" />
-                  <span>Shopify theme customization & product listing</span>
+                  <span>Shopify theme customization & AI product listing</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C59B27]" />
@@ -740,10 +786,6 @@ export default function Home() {
                     alt="Store Preview & Tools"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {/* Image slot label */}
-                  <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-amber-200 text-[0.65rem] px-3 py-1 rounded-full border border-[#D4AF37]/30">
-                    📷 Image Slot: Store Preview
-                  </div>
                 </div>
               </div>
             </div>
@@ -759,10 +801,6 @@ export default function Home() {
                     alt="1-on-1 Mentor Support"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {/* Image slot label */}
-                  <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-amber-200 text-[0.65rem] px-3 py-1 rounded-full border border-[#D4AF37]/30">
-                    📷 Image Slot: Team & Mentors
-                  </div>
                 </div>
               </div>
             </div>
@@ -771,8 +809,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-[#C59B27]/20 text-[#C59B27] flex items-center justify-center font-bold">
                 <MessageSquare className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#2C1A0B]">
-                Dedicated Mentorship & Continuous Support
+              <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wide text-[#2C1A0B]">
+                DEDICATED MENTORSHIP & CONTINUOUS SUPPORT
               </h3>
               <p className="text-sm md:text-base text-[#6E5540] leading-relaxed">
                 You are never left alone. Receive direct mentor support throughout your course
@@ -782,7 +820,7 @@ export default function Home() {
               <ul className="space-y-2 text-xs md:text-sm text-[#3A230F] font-semibold pt-1">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C59B27]" />
-                  <span>Direct instructor messaging & feedback</span>
+                  <span>Direct instructor messaging & store feedback</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C59B27]" />
@@ -798,26 +836,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "Explore Courses" Section */}
+      {/* "EXPLORE OUR COURSES" Section */}
       <section className="py-20 bg-[#FAF8F5]" id="courses">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
             <div>
-              <span className="text-xs font-bold text-[#C59B27] uppercase tracking-widest">
+              <span className="text-xs font-extrabold text-[#C59B27] uppercase tracking-widest">
                 CAREER-DEFINING PROGRAMMES
               </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B] mt-2">
-                Explore <span className="text-[#C59B27]">Our Courses</span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B] mt-2">
+                EXPLORE <span className="text-[#C59B27]">OUR AI-POWERED COURSES</span>
               </h2>
               <p className="mt-2 text-sm text-[#6E5540]">
-                Practical instructor-led training designed to build real online businesses.
+                Practical instructor-led training designed to build real online businesses with AI.
               </p>
             </div>
             <Link
               href="/courses"
-              className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-bold text-[#C59B27] hover:text-[#B8860B]"
+              className="mt-4 md:mt-0 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#C59B27] hover:text-[#B8860B]"
             >
-              <span>View All Courses</span>
+              <span>VIEW ALL COURSES</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -850,14 +888,19 @@ export default function Home() {
 
                     {/* Course Card Body */}
                     <div className="p-6 space-y-4">
-                      <div className="flex items-center gap-1 text-[#D4AF37]">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                        ))}
-                        <span className="text-xs font-bold text-[#2C1A0B] ml-1">5.0</span>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-1 text-[#D4AF37]">
+                          {Array.from({ length: 5 }).map((_, i) => (
+                            <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                          ))}
+                          <span className="text-xs font-bold text-[#2C1A0B] ml-1">5.0</span>
+                        </div>
+                        <span className="text-[0.65rem] font-extrabold uppercase tracking-wider text-[#C59B27] bg-[#C59B27]/10 px-2.5 py-0.5 rounded-full border border-[#C59B27]/20">
+                          AI-POWERED
+                        </span>
                       </div>
 
-                      <h3 className="text-xl font-extrabold text-[#2C1A0B] leading-snug group-hover:text-[#C59B27] transition-colors">
+                      <h3 className="text-lg font-black uppercase tracking-wide text-[#2C1A0B] leading-snug group-hover:text-[#C59B27] transition-colors">
                         {c.title}
                       </h3>
 
@@ -879,9 +922,9 @@ export default function Home() {
                   <div className="p-6 pt-0">
                     <Link
                       href={`/courses?slug=${c.slug}`}
-                      className="w-full bg-gradient-to-r from-[#D4AF37] to-[#C59B27] hover:from-[#C59B27] hover:to-[#B8860B] text-white py-3 rounded-2xl font-bold text-xs uppercase tracking-wider transition-colors shadow-md flex items-center justify-center gap-2"
+                      className="w-full bg-gradient-to-r from-[#D4AF37] to-[#C59B27] hover:from-[#C59B27] hover:to-[#B8860B] text-white py-3 rounded-2xl font-extrabold text-xs uppercase tracking-widest transition-colors shadow-md flex items-center justify-center gap-2"
                     >
-                      <span>Course Details</span>
+                      <span>COURSE DETAILS</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -892,28 +935,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section ("What They Say!") */}
+      {/* Testimonials Section ("WHAT OUR STUDENTS SAY") */}
       <section className="py-20 bg-white" id="reviews">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Testimonial Left Header */}
             <div className="lg:col-span-5 space-y-6">
-              <span className="text-xs font-bold text-[#C59B27] uppercase tracking-widest">
+              <span className="text-xs font-extrabold text-[#C59B27] uppercase tracking-widest">
                 TESTIMONIALS
               </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B]">
-                What They <span className="text-[#C59B27]">Say!</span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B]">
+                WHAT OUR <span className="text-[#C59B27]">STUDENTS SAY!</span>
               </h2>
               <p className="text-sm md:text-base text-[#6E5540] leading-relaxed">
                 The Time Tech has helped hundreds of students, boutique owners, and entrepreneurs
-                across the UAE launch and scale their online businesses.
+                across the UAE launch AI stores and scale their online businesses.
               </p>
               <div className="pt-2">
                 <a
                   href="#enrol"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2C1A0B] hover:bg-[#1F1208] text-white text-xs font-bold transition-all shadow-md border border-[#D4AF37]/30"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2C1A0B] hover:bg-[#1F1208] text-white text-xs font-extrabold uppercase tracking-widest transition-all shadow-md border border-[#D4AF37]/30"
                 >
-                  <span>Enrol & Join Them</span>
+                  <span>ENROL & JOIN THEM</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -979,11 +1022,11 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-amber-900/10 relative">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-xs font-bold text-[#C59B27] uppercase tracking-widest">
+              <span className="text-xs font-extrabold text-[#C59B27] uppercase tracking-widest">
                 TAKE THE NEXT STEP
               </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#2C1A0B] mt-2">
-                Request <span className="text-[#C59B27]">Enrolment</span>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-wider text-[#2C1A0B] mt-2">
+                REQUEST <span className="text-[#C59B27]">ENROLMENT</span>
               </h2>
               <p className="mt-2 text-sm text-[#6E5540]">
                 Reserve your seat for the upcoming cohort. Seats are limited to ensure small group
@@ -996,16 +1039,18 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-[#C59B27] text-white flex items-center justify-center mx-auto shadow-md">
                   <Check className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#2C1A0B]">Enrolment Request Received!</h3>
+                <h3 className="text-xl font-black uppercase tracking-wide text-[#2C1A0B]">
+                  ENROLMENT REQUEST RECEIVED!
+                </h3>
                 <p className="text-xs md:text-sm text-[#6E5540] max-w-md mx-auto">
                   Thank you for submitting your details. Our admissions mentor will contact you
                   shortly to confirm your seat and course schedule.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-4 px-6 py-2 bg-[#C59B27] text-white text-xs font-bold rounded-full"
+                  className="mt-4 px-6 py-2.5 bg-[#C59B27] text-white text-xs font-extrabold uppercase tracking-widest rounded-full"
                 >
-                  Submit Another Request
+                  SUBMIT ANOTHER REQUEST
                 </button>
               </div>
             ) : (
@@ -1062,7 +1107,7 @@ export default function Home() {
                     <select
                       value={formData.course}
                       onChange={(e) => setFormData({ ...formData, course: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-2xl bg-amber-50/50 border border-amber-900/15 text-sm focus:outline-none focus:border-[#C59B27] focus:bg-white transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-amber-50/50 border border-amber-900/15 text-sm focus:outline-none focus:border-[#C59B27] focus:bg-white transition-all font-semibold"
                     >
                       {courses.map((c) => (
                         <option key={c.slug} value={c.slug}>
@@ -1089,9 +1134,9 @@ export default function Home() {
                 <div className="pt-2 text-center">
                   <button
                     type="submit"
-                    className="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B8860B] hover:opacity-95 text-white text-sm font-extrabold uppercase tracking-widest rounded-full shadow-xl shadow-amber-950/20 transition-all hover:scale-105"
+                    className="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-[#D4AF37] via-[#C59B27] to-[#B8860B] hover:opacity-95 text-white text-xs font-extrabold uppercase tracking-widest rounded-full shadow-xl shadow-amber-950/20 transition-all hover:scale-105"
                   >
-                    Submit Enrolment Request
+                    SUBMIT ENROLMENT REQUEST
                   </button>
                 </div>
               </form>
@@ -1100,13 +1145,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer (Dark Espresso `#1F1208` Theme matching Logo) */}
+      {/* Footer */}
       <footer className="bg-[#1F1208] text-white pt-16 pb-12 border-t border-[#D4AF37]/20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/10">
-            {/* Footer Logo & Brand */}
-            <div className="flex items-center gap-3.5">
-              <div className="relative w-10 h-10 flex-shrink-0">
+            {/* Footer Logo & Brand (Enlarged Logo) */}
+            <div className="flex items-center gap-4">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
                 <img
                   src="/images/logo.png"
                   alt="The Time Tech Logo"
@@ -1114,47 +1159,47 @@ export default function Home() {
                 />
               </div>
               <div>
-                <span className="font-extrabold text-xl tracking-tight block leading-none text-white">
+                <span className="font-black text-2xl md:text-3xl uppercase tracking-wider block leading-none text-white">
                   {brand.name}
                 </span>
-                <span className="text-[0.65rem] uppercase tracking-[0.25em] text-[#D4AF37] font-bold mt-0.5">
-                  {brand.tagline}
+                <span className="text-[0.7rem] uppercase tracking-[0.3em] text-[#D4AF37] font-extrabold mt-1 block">
+                  {brand.tagline.toUpperCase()}
                 </span>
               </div>
             </div>
 
             {/* Navigation links */}
-            <nav className="flex flex-wrap items-center justify-center gap-8 text-sm text-amber-100/80 font-medium">
+            <nav className="flex flex-wrap items-center justify-center gap-8 text-xs uppercase tracking-wider text-amber-100/80 font-bold">
               <Link href="/" className="hover:text-[#D4AF37] transition-colors">
-                Home
+                HOME
               </Link>
               <Link href="/courses" className="hover:text-[#D4AF37] transition-colors">
-                Courses
+                COURSES
               </Link>
               <a href="#about" className="hover:text-[#D4AF37] transition-colors">
-                About Us
+                ABOUT US
               </a>
               <a href="#features" className="hover:text-[#D4AF37] transition-colors">
-                Features
+                FEATURES & AI
               </a>
               <a href="#reviews" className="hover:text-[#D4AF37] transition-colors">
-                Reviews
+                REVIEWS
               </a>
               <a href="#enrol" className="hover:text-[#D4AF37] transition-colors">
-                Enrol Now
+                ENROL NOW
               </a>
             </nav>
           </div>
 
           {/* Copyright & Info */}
-          <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-amber-200/60">
+          <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-amber-200/60 font-medium uppercase tracking-wider">
             <p>
-              © {new Date().getFullYear()} {brand.name}. All rights reserved.
+              © {new Date().getFullYear()} {brand.name.toUpperCase()}. ALL RIGHTS RESERVED.
             </p>
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" />
-                {brand.location}
+                {brand.location.toUpperCase()}
               </span>
               <span>•</span>
               <a href={`mailto:${brand.email}`} className="hover:text-white transition-colors">
