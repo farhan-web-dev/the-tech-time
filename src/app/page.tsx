@@ -141,12 +141,13 @@ export default function Home() {
           </nav>
 
           {/* Action Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <a
-              href="#enrol"
-              className="text-xs font-extrabold uppercase tracking-widest text-[#5C4532] hover:text-[#C59B27] px-4 py-2 transition-colors"
+              href={`tel:${brand.phone.replace(/\s+/g, "")}`}
+              className="flex items-center gap-1.5 text-xs font-bold text-[#2C1A0B] hover:text-[#C59B27] transition-colors px-2 py-1"
             >
-              SIGN IN
+              <Phone className="w-3.5 h-3.5 text-[#C59B27]" />
+              {brand.phone}
             </a>
             <a
               href="#enrol"
@@ -1093,7 +1094,7 @@ export default function Home() {
                     <input
                       type="tel"
                       required
-                      placeholder="+971 50 123 4567"
+                      placeholder={brand.phone}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-amber-50/50 border border-amber-900/15 text-sm focus:outline-none focus:border-[#C59B27] focus:bg-white transition-all"
@@ -1196,11 +1197,19 @@ export default function Home() {
             <p>
               © {new Date().getFullYear()} {brand.name.toUpperCase()}. ALL RIGHTS RESERVED.
             </p>
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center gap-4 md:gap-6">
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" />
                 {brand.location.toUpperCase()}
               </span>
+              <span>•</span>
+              <a
+                href={`tel:${brand.phone.replace(/\s+/g, "")}`}
+                className="flex items-center gap-1.5 hover:text-white transition-colors text-amber-100"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
+                {brand.phone}
+              </a>
               <span>•</span>
               <a href={`mailto:${brand.email}`} className="hover:text-white transition-colors">
                 {brand.email}

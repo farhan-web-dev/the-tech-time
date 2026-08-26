@@ -2,7 +2,8 @@ export const brand = {
   name: "The Time Tech",
   tagline: "Invest in Time. Build Your Future.",
   email: "hello@thetimetech.com",
-  phone: "+971 00 000 0000",
+  phone: "+971 56 611 2150",
+  whatsapp: "+971 56 611 2150",
   location: "Dubai, United Arab Emirates",
 };
 

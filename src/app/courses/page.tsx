@@ -312,7 +312,7 @@ function CoursesContent() {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="+971"
+                  placeholder={brand.phone}
                   className="mt-2 w-full rounded-xl border border-input bg-card px-4 py-3 text-sm outline-none focus:border-gold"
                 />
               </label>

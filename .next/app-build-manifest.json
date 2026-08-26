@@ -21,8 +21,8 @@
       "static/chunks/255-87552e6e05b8e3aa.js",
       "static/chunks/main-app-5150eb849bff5302.js",
       "static/css/75bfa48d277e1a9b.css",
-      "static/css/0792b20ee356b148.css",
-      "static/chunks/app/layout-76592951c5ad4691.js"
+      "static/css/9122593a7a201486.css",
+      "static/chunks/app/layout-1e08ba1c945c7613.js"
     ],
     "/error": [
       "static/chunks/webpack-5dc8de58121ec205.js",
@@ -39,7 +39,7 @@
       "static/chunks/main-app-5150eb849bff5302.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
       "static/chunks/239-d33310ddfa6356f4.js",
-      "static/chunks/app/courses/page-ef2d389e80ec0308.js"
+      "static/chunks/app/courses/page-1ab5fdbe2eddb41e.js"
     ],
     "/page": [
       "static/chunks/webpack-5dc8de58121ec205.js",
@@ -48,7 +48,7 @@
       "static/chunks/main-app-5150eb849bff5302.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
       "static/chunks/239-d33310ddfa6356f4.js",
-      "static/chunks/app/page-877b43f0efb0840c.js"
+      "static/chunks/app/page-89db26ed69efe13c.js"
     ]
   }
 }
