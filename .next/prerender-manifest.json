@@ -25,30 +25,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/courses": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/courses",
-      "dataRoute": "/courses.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/_not-found": {
       "initialStatus": 404,
       "experimentalBypassFor": [
@@ -73,13 +49,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/courses": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/courses",
+      "dataRoute": "/courses.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "b899519f1fa6569d1b5f4155b4b0ebcd",
-    "previewModeSigningKey": "3f54b8d38875ae9366216ff6ee92b34a3a1664b8dca6c9044ff22b9a6b7d2ca9",
-    "previewModeEncryptionKey": "fb683bfd2b9382f0ade4b143dbf4bc10ebcd6861cf9e21a89564f7e09175cbcb"
+    "previewModeId": "f9819c59384d4354ff4a159565531c68",
+    "previewModeSigningKey": "2cedc9bc3049afbbefb7eb5591baa475b53e847a43aa9de3f78d135b7ce9fecc",
+    "previewModeEncryptionKey": "e584ed3e80f4854494f318ffd534e0c02e48db3864963f514ae56a9f619a4d5d"
   }
 }

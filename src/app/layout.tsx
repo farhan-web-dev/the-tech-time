@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Karla } from "next/font/google";
+import { Toaster } from "sonner";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import "./globals.css";
 
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cormorant.variable} ${karla.variable}`}>
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
+        <Toaster position="top-right" richColors />
         <WhatsAppButton />
       </body>
     </html>
