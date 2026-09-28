@@ -1,10 +1,18 @@
 export const brand = {
   name: "The Time Tech",
   tagline: "Invest in Time. Build Your Future.",
-  email: "hello@thetimetech.com",
+  email: "thetechtime1@gmail.com",
   phone: "+971 56 611 2150",
   whatsapp: "+971 56 611 2150",
   location: "Dubai, United Arab Emirates",
+};
+
+export const termsAndConditions = {
+  title: "Terms and Conditions",
+  sections: [
+    "All content provided through The time tech is for educational purposes only. Nothing on this website constitutes financial, investment, or legal advice.",
+    "Results are not guaranteed and depend entirely on individual effort, skills, and market conditions. Neither The time tech nor this website promise profits or financial success.",
+  ],
 };
 
 export type Course = {
@@ -38,12 +46,12 @@ export const courses: Course[] = [
       "The course also introduces AI-driven SEO, automated ad generation, abandoned-cart recovery, email automations, AI chatbots, and analytics. By the end, each student will be able to build, automate, and manage a profitable Shopify store.",
     ],
     duration: "12 hours total",
-    schedule: "4 weeks · 2 sessions per week × 2.5 hours",
+    schedule: "4 Classes weekly",
     format: "Instructor-led practical training · Live + hands-on exercises",
     language: "English",
     method: "Approximately 30% theory and 70% practical work",
-    price: "AED 1,499",
-    promo: "AED 999 introductory offer",
+    price: "$ 299",
+    promo: "$ 99 introductory offer",
     takeaways: [
       "BUILD A SHOPIFY STORE WITH AI FROM SCRATCH",
       "Generate instant high-converting store layouts & themes using AI builders",
@@ -110,12 +118,12 @@ export const courses: Course[] = [
       "The programme also covers profitability maths, inventory planning, review management, and long-term brand growth on Amazon marketplaces.",
     ],
     duration: "12 hours total",
-    schedule: "4 weeks · 2 sessions per week × 2.5 hours",
+    schedule: "4 Classes weekly",
     format: "Instructor-led practical training · Live + hands-on exercises",
     language: "English",
     method: "Approximately 30% theory and 70% practical work",
-    price: "AED 1,499",
-    promo: "AED 999 introductory offer",
+    price: "$ 299",
+    promo: "$ 99 introductory offer",
     takeaways: [
       "Understand the Amazon marketplace and FBA model",
       "Create and verify a seller central account",
@@ -162,12 +170,12 @@ export const courses: Course[] = [
       "Reporting is a core part of the course — participants learn to read analytics dashboards, measure return on ad spend, and make decisions based on data.",
     ],
     duration: "12 hours total",
-    schedule: "4 weeks · 2 sessions per week × 2.5 hours",
+    schedule: "4 Classes weekly",
     format: "Instructor-led practical training · Live + hands-on exercises",
     language: "English",
     method: "Approximately 30% theory and 70% practical work",
-    price: "AED 1,499",
-    promo: "AED 999 introductory offer",
+    price: "$ 299",
+    promo: "$ 99 introductory offer",
     takeaways: [
       "Build a marketing strategy and funnel",
       "Define audiences and buyer personas",
@@ -204,7 +212,7 @@ export const courses: Course[] = [
 
 export const reviews = [
   {
-    name: "Ayesha Rahman",
+    name: "Anthoney Miller",
     role: "Boutique owner, Dubai",
     course: "Shopify E-Commerce Mastery",
     quote:

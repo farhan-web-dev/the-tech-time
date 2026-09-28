@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Check, Loader2, AlertCircle } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
@@ -133,7 +134,7 @@ export default function EnrolmentSection() {
                     type="text"
                     required
                     disabled={isSubmitting}
-                    placeholder="e.g. Ayesha Rahman"
+                    placeholder="e.g. John"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3.5 rounded-2xl bg-amber-50/50 border border-amber-900/15 text-sm focus:outline-none focus:border-[#C59B27] focus:bg-white transition-all disabled:opacity-60"
@@ -220,6 +221,16 @@ export default function EnrolmentSection() {
                     "SUBMIT ENROLMENT REQUEST"
                   )}
                 </button>
+                <p className="mt-3 text-[0.7rem] text-[#6E5540] leading-relaxed">
+                  By submitting, you agree to our{" "}
+                  <Link
+                    href="/terms"
+                    className="text-[#C59B27] font-semibold underline hover:text-[#B8860B]"
+                  >
+                    Terms and Conditions
+                  </Link>
+                  . All content is for educational purposes.
+                </p>
               </div>
             </form>
           )}

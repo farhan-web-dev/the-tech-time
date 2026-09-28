@@ -37,6 +37,12 @@
       "regex": "^/courses(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/courses(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
     }
   ],
   "dataRoutes": [],

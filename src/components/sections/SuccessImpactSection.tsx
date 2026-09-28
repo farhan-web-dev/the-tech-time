@@ -49,10 +49,10 @@ export default function SuccessImpactSection() {
 
           <div className="p-6 rounded-3xl bg-[#FAF6EE] border border-[#8B6B23]/20 transition-transform hover:-translate-y-1 col-span-2 md:col-span-1">
             <span className="text-4xl lg:text-5xl font-black text-[#8B6B23] tracking-tight">
-              16
+              100%
             </span>
             <p className="mt-2 text-xs md:text-sm font-bold text-[#3A230F] uppercase tracking-wider">
-              Years Experience
+              Experienced Team
             </p>
           </div>
         </div>

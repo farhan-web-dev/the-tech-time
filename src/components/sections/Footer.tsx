@@ -46,6 +46,9 @@ export default function Footer() {
             <a href="#enrol" className="hover:text-[#D4AF37] transition-colors">
               ENROL NOW
             </a>
+            <Link href="/terms" className="hover:text-[#D4AF37] transition-colors text-[#D4AF37]">
+              TERMS & CONDITIONS
+            </Link>
           </nav>
         </div>
 
@@ -68,10 +71,26 @@ export default function Footer() {
               {brand.phone}
             </a>
             <span>•</span>
-            <a href={`mailto:${brand.email}`} className="hover:text-white transition-colors">
+            <a
+              href={`mailto:${brand.email}`}
+              className="lowercase hover:text-white transition-colors"
+            >
               {brand.email}
             </a>
           </div>
+        </div>
+
+        {/* Legal Terms Disclaimer */}
+        <div className="mt-8 pt-6 border-t border-white/5 text-[0.7rem] text-amber-200/50 leading-relaxed text-center max-w-4xl mx-auto">
+          <p className="normal-case">
+            All content provided through {brand.name} is for educational purposes only. Nothing on
+            this website constitutes financial, investment, or legal advice. Results are not
+            guaranteed and depend entirely on individual effort, skills, and market conditions.
+            Neither {brand.name} nor this website promise profits or financial success.{" "}
+            <Link href="/terms" className="text-[#D4AF37] underline hover:text-white font-semibold">
+              Terms & Conditions
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
